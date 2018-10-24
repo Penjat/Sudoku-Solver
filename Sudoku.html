@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="puzzleSetup.js"></script>
+
+<script src="solver.js"> </script>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+  <script>
+    window.onload = makeTable;
+  </script>
+
+
+<div id="mainCon">
+
+<div>
+  Select Speed:
+  <button type="button" class="speedBut" onclick="setSolveSpeed(0,this)">Max</button>
+  <button type="button" class="speedBut" onclick="setSolveSpeed(1,this)">Very Fast</button>
+  <button type="button" class="speedBut" onclick="setSolveSpeed(20,this)">Fast</button>
+  <button type="button" class="speedBut" onclick="setSolveSpeed(200,this)">Medium</button>
+  <button type="button" class="speedBut" onclick="setSolveSpeed(500,this)">Slow</button>
+  <button type="button" class="speedBut" onclick="setSolveSpeed(1000,this)">Very Slow</button>
+
+</div>
+<button type="button" class="mainBut" onclick="makeTable();">Clear All</button>
+<button type="button" class="mainBut" onclick="solve();">Solve</button>
+
+
+
+<p>
+<div id="tableCon"></div>
+</p>
+<div id="outputData">
+  <h3>enter a sudoku</h3>
+</div>
+<div id="buttonCon">
+  <button type="button" class="valBut" onclick="setCurValue(1,this)">1</button>
+  <button type="button" class="valBut" onclick="setCurValue(2,this)">2</button>
+  <button type="button" class="valBut" onclick="setCurValue(3,this)">3</button>
+  <button type="button" class="valBut" onclick="setCurValue(4,this)">4</button>
+  <button type="button" class="valBut" onclick="setCurValue(5,this)">5</button>
+  <button type="button" class="valBut" onclick="setCurValue(6,this)">6</button>
+  <button type="button" class="valBut" onclick="setCurValue(7,this)">7</button>
+  <button type="button" class="valBut" onclick="setCurValue(8,this)">8</button>
+  <button type="button" class="valBut" onclick="setCurValue(9,this)">9</button>
+  <button type="button" class="valBut" onclick="setCurValue(0,this)">...</button>
+
+</div>
+
+
+</div>
+</body>
+</html>
